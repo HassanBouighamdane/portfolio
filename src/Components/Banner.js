@@ -3,6 +3,7 @@ import { Row,Col } from "react-bootstrap";
 import { ArrowRightCircle} from "react-bootstrap-icons";
 import myImg from '../assets/img/Personal-image.jpg';
 import { useEffect,useState } from "react";
+import '../styles/Banner.css'
 
 
 function Banner(){
