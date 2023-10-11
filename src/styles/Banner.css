@@ -1,11 +1,21 @@
 .banner {
     margin-top: 0;
-    padding: 260px 0 100px 0;
+    padding: 200px 0 100px 0;
     background-image: url('../assets/img/banner-bg.png');
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .centered-content {
+    text-align: center; /* Center content horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content vertically */
+    justify-content: center;
+    height: 100%;
+    margin: 0 auto;
+  }
+ 
   .banner .tagline {
     font-weight: 700;
     letter-spacing: 0.8px;
@@ -15,14 +25,17 @@
     font-size: 20px;
     margin-bottom: 16px;
     display: inline-block;
+    
+    
   }
   .banner h1 {
-    font-size: 65px;
+    font-size: 45px;
     font-weight: 700;
     letter-spacing: 0.8px;
     line-height: 1;
     margin-bottom: 20px;
     display: block;
+    text-align: center;
   }
   .banner p {
     color: #B8B8B8;
@@ -30,6 +43,7 @@
     letter-spacing: 0.8px;
     line-height: 1.5em;
     width: 96%;
+    
   }
   .banner button {
     color: #fff;
@@ -57,6 +71,7 @@
     border-radius: 50px; /* Add rounded corners */
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Add a shadow */
     animation: updown 3s linear infinite;
+    margin: 25px;
   }
   @keyframes updown {
       0% {

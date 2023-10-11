@@ -1,9 +1,10 @@
-
 import { Row,Col } from "react-bootstrap";
 import { ArrowRightCircle} from "react-bootstrap-icons";
 import myImg from '../assets/img/Personal-image.jpg';
 import { useEffect,useState } from "react";
 import '../styles/Banner.css'
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 
 function Banner(){
@@ -52,15 +53,24 @@ function Banner(){
 
             <section className="banner" id="home">
             <Row className="align-items-center">
-                <Col xs={12} md={6} xl={7}>
-                    <span className="tagline">Welcome to my portfolio</span>
-                    <h1>{`Hi I'm Hassan Bouighamdane a ` }<span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "Software Engineer" ]'><span className="wrap">{text}</span></span></h1>
-                    <p>My description</p>
-                    <button onClick={()=>console.log('connect')}>Let's connect<ArrowRightCircle size={25}  /></button>
+            <Col xs={12} md={6} xl={5}>
+              <div className="centered-content"><img src={myImg} alt="myimage"/></div>
+                    
                 </Col>
-                <Col xs={12} md={6} xl={5}>
-                    <img src={myImg} alt="myimage"/>
+                <Col className="welcome-text" xs={12} md={6} xl={7}>
+                  <TrackVisibility>
+                  {({ isVisible }) =>
+                  <div  className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                    <div className="centered-content">
+                        <span className="tagline">Welcome to my portfolio</span>
+                        <h1>{`I'm Hassan Bouighamdane a `}<span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "Software Engineer" ]'><span className="wrap">{text}</span></span></h1>
+                        <p>I'm a Software Engineering Student at National Institute of Postes and Telecommunications (INPT-Rabat). I have a passion for web development, web design, and I enjoy solving problems using Java.</p>
+                          <a href="#connect"><button>Let's connect<ArrowRightCircle size={25} /></button></a>
+        </div>
+                    </div>}
+                    </TrackVisibility>
                 </Col>
+                
             </Row>
 
 

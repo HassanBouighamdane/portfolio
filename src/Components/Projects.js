@@ -5,6 +5,8 @@ import projImg3 from '../assets/img/project-img3.png';
 import { Col, Container, Row,Nav, TabContainer,Tab } from 'react-bootstrap';
 import { ProjectCard } from './ProjectCard';
 import colorSharp2 from "../assets/img/color-sharp2.png"
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 function Projects(){
 
@@ -24,12 +26,17 @@ function Projects(){
             description:"React ",
             imgUrl:projImg3,
         },
+        
+         
     ];
     return(
-        <section className='project' id='project'>
+        <section className='project' id='projects'>
             <Container>
                 <Row>
-                    <Col>
+                    <Col size={12}>
+                    <TrackVisibility>
+              {({ isVisible }) =>
+              <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                     <h2>Projects</h2>
                     <p>Description</p>
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
@@ -44,7 +51,7 @@ function Projects(){
                       <Nav.Link eventKey="third">Tab 3</Nav.Link>
                     </Nav.Item>
                   </Nav>
-                  <Tab.Content id="slideInUp" >
+                  <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""} >
                     <Tab.Pane eventKey="first">
                       <Row>
                         {
@@ -67,7 +74,11 @@ function Projects(){
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>
+
+                  </div>}
+            </TrackVisibility>
                     </Col>
+
                 </Row>
             </Container>
             <img className="background-image-right" src={colorSharp2}></img>

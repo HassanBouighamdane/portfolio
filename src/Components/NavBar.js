@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from '../assets/img/logo.svg';
+import logo from '../assets/img/logo.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
@@ -50,13 +50,15 @@ function NavBar ()  {
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://www.linkedin.com/in/hassan-bouighamdane-095b01254/" target="_blank"><img src={navIcon1} alt="" /></a>
-                <a href="https://www.facebook.com/hassan.bouighamdane/" target="_blank"><img src={navIcon2} alt="" /></a>
-                <a href="https://github.com/HassanBouighamdane" target="_blank"><img src={navIcon3} alt="" /></a>
+                <a href="https://www.linkedin.com/in/hassan-bouighamdane-095b01254/" target="_blank" title="LinkedIn"><img src={navIcon1} alt="Linkedin" /></a>
+                <a href="https://www.facebook.com/hassan.bouighamdane/" target="_blank" title="Facebook"><img src={navIcon2} alt="Facebook" /></a>
+                <a href="https://github.com/HassanBouighamdane" target="_blank" title="GitHub"><img src={navIcon3} alt="Github" /></a>
               </div>
 
-              
-                <button className="vvd"><span>Let's Connect</span></button>
+              <a href="#connect">
+              <button  className="vvd"  ><span>Let's Connect</span></button>
+              </a>
+               
               
               
             </span>
