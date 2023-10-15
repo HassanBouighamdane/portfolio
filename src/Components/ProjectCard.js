@@ -1,7 +1,7 @@
 import { Col } from "react-bootstrap";
 import '../styles/ProjectCard.css';
 import navIcon3 from '../assets/img/nav-icon3.svg';
-import { Laptop } from "react-bootstrap-icons";
+import  Laptop  from "../assets/img/laptop.svg";
 
 export const ProjectCard=({title,description,imgUrl,githubLink,projectLink})=>{
     return(
