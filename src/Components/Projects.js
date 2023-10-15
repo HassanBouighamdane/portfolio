@@ -30,7 +30,7 @@ function Projects(){
         },
         {
             title:"Plagiarism Detection",
-            description:"ReactJS end SpringBoot ",
+            description:"ReactJS and SpringBoot ",
             imgUrl:PlagiarismImg,
             githubLink:"https://github.com/HassanBouighamdane/PlagiarismDetection",
             projectLink:"#"
