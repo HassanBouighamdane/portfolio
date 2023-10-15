@@ -23,7 +23,7 @@ function Projects(){
       
         {
             title:"Portfolio WebSite",
-            description:"ReactJS and EmailJ ",
+            description:"ReactJS and EmailJS ",
             imgUrl:portfolioImg,
             githubLink:"https://github.com/HassanBouighamdane/portfolio",
             projectLink:"https://hassanbouighamdane.github.io/portfolio/"
