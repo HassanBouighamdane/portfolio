@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.fab7e689.css",
-    "main.js": "/portfolio/static/js/main.e667a7e8.js",
+    "main.css": "/portfolio/static/css/main.d3d0dbfa.css",
+    "main.js": "/portfolio/static/js/main.014aff98.js",
     "static/media/color-sharp.png": "/portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/Restaurant.jpg": "/portfolio/static/media/Restaurant.38daeba6c8f0d1209dac.jpg",
@@ -22,15 +22,16 @@
     "static/media/meter2.svg": "/portfolio/static/media/meter2.1b8f416eccd1ee162218b8528a1c5cdc.svg",
     "static/media/meter1.svg": "/portfolio/static/media/meter1.c4085ff859afbd8488e9da47d4953850.svg",
     "static/media/meter3.svg": "/portfolio/static/media/meter3.2201f7e4df22bc4b08180210474f28cc.svg",
+    "static/media/laptop.svg": "/portfolio/static/media/laptop.11b9c0700a34b119d92a86572f5384d6.svg",
     "static/media/nav-icon3.svg": "/portfolio/static/media/nav-icon3.97ed8e7eef60d61ca469881dd6f34511.svg",
     "static/media/nav-icon1.svg": "/portfolio/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "index.html": "/portfolio/index.html",
     "static/media/nav-icon2.svg": "/portfolio/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
-    "main.fab7e689.css.map": "/portfolio/static/css/main.fab7e689.css.map",
-    "main.e667a7e8.js.map": "/portfolio/static/js/main.e667a7e8.js.map"
+    "main.d3d0dbfa.css.map": "/portfolio/static/css/main.d3d0dbfa.css.map",
+    "main.014aff98.js.map": "/portfolio/static/js/main.014aff98.js.map"
   },
   "entrypoints": [
-    "static/css/main.fab7e689.css",
-    "static/js/main.e667a7e8.js"
+    "static/css/main.d3d0dbfa.css",
+    "static/js/main.014aff98.js"
   ]
 }
