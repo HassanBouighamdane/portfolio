@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.fab7e689.css",
-    "main.js": "/portfolio/static/js/main.0d031dc3.js",
+    "main.js": "/portfolio/static/js/main.c5c1e76b.js",
     "static/media/color-sharp.png": "/portfolio/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/color-sharp2.png": "/portfolio/static/media/color-sharp2.c87586c6c2f549cb4aa6.png",
     "static/media/Restaurant.jpg": "/portfolio/static/media/Restaurant.38daeba6c8f0d1209dac.jpg",
@@ -16,6 +16,7 @@
     "static/media/logo.png": "/portfolio/static/media/logo.5189aea196360f63965e.png",
     "static/media/revicons.eot": "/portfolio/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/meter60.png": "/portfolio/static/media/meter60.8b49b8d05d627d023fa8.png",
     "static/media/meter50.png": "/portfolio/static/media/meter50.490c941d2603b1788b6c.png",
     "static/media/meter70.png": "/portfolio/static/media/meter70.abec2db791f0f679519f.png",
     "static/media/revicons.woff": "/portfolio/static/media/revicons.e8746a624ed098489406.woff",
@@ -28,10 +29,10 @@
     "index.html": "/portfolio/index.html",
     "static/media/nav-icon2.svg": "/portfolio/static/media/nav-icon2.178f497aa17b70c42df2a1a8c926ed01.svg",
     "main.fab7e689.css.map": "/portfolio/static/css/main.fab7e689.css.map",
-    "main.0d031dc3.js.map": "/portfolio/static/js/main.0d031dc3.js.map"
+    "main.c5c1e76b.js.map": "/portfolio/static/js/main.c5c1e76b.js.map"
   },
   "entrypoints": [
     "static/css/main.fab7e689.css",
-    "static/js/main.0d031dc3.js"
+    "static/js/main.c5c1e76b.js"
   ]
 }
