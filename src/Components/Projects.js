@@ -1,7 +1,8 @@
 import '../styles/Projects.css';
-import projImg1 from '../assets/img/project-img1.png';
-import projImg2 from '../assets/img/project-img2.png';
-import projImg3 from '../assets/img/project-img3.png';
+import portfolioImg from '../assets/img/project img/portfolio.jpg';
+import PlagiarismImg from '../assets/img/project img/plagiat.jpg';
+import stockAppImg from '../assets/img/project img/stockManagement.jpg';
+import restaurantImg from '../assets/img/project img/Restaurant.jpg';
 import { Col, Container, Row,Nav, Tab } from 'react-bootstrap';
 import { ProjectCard } from './ProjectCard';
 import colorSharp2 from "../assets/img/color-sharp2.png"
@@ -11,27 +12,37 @@ import TrackVisibility from 'react-on-screen';
 function Projects(){
 
     const projects=[
+
+      {
+        title:"Restaurant Reservation",
+        description:"HTML ,CSS and PHP",
+        imgUrl:restaurantImg,
+        githubLink:"https://github.com/HassanBouighamdane/RestaurantReservation",
+        projectLink:"#"
+    },
+      
         {
             title:"Portfolio WebSite",
-            description:"React ",
-            imgUrl:projImg1,
+            description:"ReactJS and EmailJ ",
+            imgUrl:portfolioImg,
             githubLink:"https://github.com/HassanBouighamdane/portfolio",
             projectLink:"#"
         },
         {
-            title:"Portfolio WebSite",
-            description:"React ",
-            imgUrl:projImg2,
-            githubLink:"https://github.com/HassanBouighamdane/portfolio",
+            title:"Plagiarism Detection",
+            description:"ReactJS end SpringBoot ",
+            imgUrl:PlagiarismImg,
+            githubLink:"https://github.com/HassanBouighamdane/PlagiarismDetection",
             projectLink:"#"
         },
         {
-            title:"Portfolio WebSite",
-            description:"React ",
-            imgUrl:projImg3,
-            githubLink:"https://github.com/HassanBouighamdane/portfolio",
+            title:"Stock Management App",
+            description:"Java, JavaFx, MySQL ",
+            imgUrl:stockAppImg,
+            githubLink:"https://github.com/HassanBouighamdane/StockManagementApp",
             projectLink:"#"
         },
+
         
          
     ];
@@ -73,10 +84,10 @@ function Projects(){
                         </Row>
                       </Tab.Pane>
                       <Tab.Pane eventKey="second">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                        <p>Stay tuned for more projects</p>
                       </Tab.Pane>
                       <Tab.Pane eventKey="third">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                        <p>Stay tuned for more projects</p>
                       </Tab.Pane>
                     </Tab.Content>
                   </Tab.Container>

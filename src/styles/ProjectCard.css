@@ -3,6 +3,7 @@
     border-radius: 30px;
     overflow: hidden;
     margin-bottom: 24px;
+    width: 100%;
   }
   .proj-imgbx::before {
     content: "";
@@ -36,7 +37,8 @@
     letter-spacing: 0.8px;
     line-height: 1.1em;
   }
-  .proj-txtx .desreption {
+  .proj-txtx .description {
+    color: rgb(133, 247, 247);
     font-style: italic;
     font-weight: 400;
     font-size: 15px;

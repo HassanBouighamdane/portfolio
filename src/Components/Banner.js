@@ -2,6 +2,7 @@ import { Row,Col } from "react-bootstrap";
 import { ArrowRightCircle} from "react-bootstrap-icons";
 import myImg from '../assets/img/Personal-image.jpg';
 import { useEffect,useState } from "react";
+import cv from '../assets/CV.pdf'
 import '../styles/Banner.css'
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -65,7 +66,7 @@ function Banner(){
                         <span className="tagline">Welcome to my portfolio</span>
                         <h1>{`I'm Hassan Bouighamdane a `}<span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "Software Engineer" ]'><span className="wrap">{text}</span></span></h1>
                         <p>I'm a Software Engineering Student at National Institute of Postes and Telecommunications (INPT-Rabat). I have a passion for web development, web design, and I enjoy solving problems using Java.</p>
-                          <a href="#"><button>My Cv<ArrowRightCircle size={25} /></button></a>
+                          <a href={cv}><button>My Cv<ArrowRightCircle size={25} /></button></a>
         </div>
                     </div>}
                     </TrackVisibility>
