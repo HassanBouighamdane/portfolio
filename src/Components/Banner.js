@@ -13,7 +13,7 @@ function Banner(){
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const [index, setIndex] = useState(1);
-    const toRotate = [ "Web Developer", "Web Designer", "Software Engineer" ];
+    const toRotate = [  "Software Engineer","Web Developer", "Web Designer" ];
     const period = 2000;
   
     useEffect(() => {
@@ -65,7 +65,7 @@ function Banner(){
                         <span className="tagline">Welcome to my portfolio</span>
                         <h1>{`I'm Hassan Bouighamdane a `}<span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "Software Engineer" ]'><span className="wrap">{text}</span></span></h1>
                         <p>I'm a Software Engineering Student at National Institute of Postes and Telecommunications (INPT-Rabat). I have a passion for web development, web design, and I enjoy solving problems using Java.</p>
-                          <a href="#connect"><button>Let's connect<ArrowRightCircle size={25} /></button></a>
+                          <a href="#"><button>My Cv<ArrowRightCircle size={25} /></button></a>
         </div>
                     </div>}
                     </TrackVisibility>

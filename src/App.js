@@ -9,6 +9,7 @@ import  {Footer}  from './Components/Footer';
 
 
 
+
 function App() {
 
   return (
@@ -19,6 +20,7 @@ function App() {
      <Projects/>
      <Contact/>
      <Footer/>
+     
     </div>
   );
 }

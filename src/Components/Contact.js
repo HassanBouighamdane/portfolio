@@ -1,49 +1,51 @@
 import { Col, Container, Row } from 'react-bootstrap';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import '../styles/Contact.css'
-import { useState} from 'react'
+import { useState } from 'react'
 import contactImg from '../assets/img/contact-img.svg'
+import emailjs from '@emailjs/browser';
 
 export const Contact=()=>{
 
-   
-
-    const formInitialDetails={
-        firstName:'',
-        lastName:'',
-        email:'',
-        message:'',
-        phone:''
-    }
-    const [formDetails,setFormDetails]=useState(formInitialDetails);
+    
     const [buttonText,setButtonText]=useState('send');
-    const [status,setStatus]=useState({});
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+  
+    const handleSubmit = (e) => {
+      e.preventDefault();
 
-    const onFormUpdate=(category,value)=>{
-        setFormDetails({
-            ...formDetails,
-            [category]:value
-        }
-        )
-    }
-
-    const handleSubmit=async(e)=>{
-        e.preventDefault();
-        setButtonText('Sending...');
-        let response=await fetch("http://localhost:5000/contact",{
-            method:'POST',
-            headers:{
-                "Content-Type":"Application/json;charset=utf-8"
-            },
-            body:JSON.stringify(formDetails),
+      setButtonText('sending...');
+  
+      // Your EmailJS service ID, template ID, and Public Key
+      const serviceId = 'service_qw3usst';
+      const templateId = 'template_sxyqqgx';
+      const publicKey = 'lSxsax6ksdbar3BE1';
+  
+      // Create a new object that contains dynamic template params
+      const templateParams = {
+        from_name: name,
+        from_email: email,
+        to_name: 'Bouighamdane Hassan',
+        message: message,
+      };
+  
+      // Send the email using EmailJS
+      emailjs.send(serviceId, templateId, templateParams, publicKey)
+        .then((response) => {
+          console.log('Email sent successfully!', response);
+          toast.success('Message sent successfully');
+          setName('');
+          setEmail('');
+          setMessage('');
+        })
+        .catch((error) => {
+          console.error('Error sending email:', error);
+          toast.error('Error sending email');
         });
-        setButtonText("Send");
-        let result=response.json();
-        setFormDetails(formInitialDetails);
-        if (result.code === 200) {
-            setStatus({ success: true, message: 'Message sent successfully'});
-          } else {
-            setStatus({ success: false, message: 'Something went wrong, please try again later.'});
-          }
+        setButtonText('send');
     }
 
    
@@ -60,29 +62,20 @@ export const Contact=()=>{
                     <form onSubmit={handleSubmit}>
                         <Row>
                             <Col sm={6} className='px-1 '>
-                                <input type='text'value={formDetails.firstName} placeholder='First Name' onChange={(e)=>onFormUpdate('firstName',e.target.value)}/>
+                                <input type='text' placeholder='Name' value={name} onChange={(e) => setName(e.target.value)}/>
                             </Col>
+                            
                             <Col sm={6} className='px-1 '>
-                            <input type='text'value={formDetails.lastName} placeholder='Last Name' onChange={(e)=>onFormUpdate('lastName',e.target.value)}/>
+                            <input type='email' placeholder='Email' value={email} onChange={(e) => setEmail(e.target.value)}/>
                             </Col>
-                            <Col sm={6} className='px-1 '>
-                            <input type='email'value={formDetails.email} placeholder='Email' onChange={(e)=>onFormUpdate('email',e.target.value)}/>
-                            </Col>
-                            <Col sm={6} className='px-1 '>
-                            <input type='tel'value={formDetails.phone} placeholder='Phone' onChange={(e)=>onFormUpdate('phone',e.target.value)}/>
-                            </Col>
+                           
                             <Col>
-                            <textarea rows={6} value={formDetails.message} placeholder='Message' onChange={(e)=>onFormUpdate('message',e.target.value)} />   
+                            <textarea rows={6}  placeholder='Message'  value={message} onChange={(e) => setMessage(e.target.value)}/>   
                             <button type='submit'><span>{buttonText}</span></button>      
                             </Col>
-                            {
-                                status.message &&
-                                <Col>
-                                <p className={status.success===false ? "danger ":"success"}>{status.message}</p>
-                                </Col>
-                            }
                         </Row>
                     </form>
+                    <ToastContainer />
                     </Col>
                 </Row>
             </Container>

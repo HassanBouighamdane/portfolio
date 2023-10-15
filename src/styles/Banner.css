@@ -46,6 +46,9 @@
     
   }
   .banner button {
+    background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%);
+    padding: 8px 10px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
     color: #fff;
     font-weight: 700;
     font-size: 20px;

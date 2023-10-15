@@ -2,7 +2,7 @@ import '../styles/Projects.css';
 import projImg1 from '../assets/img/project-img1.png';
 import projImg2 from '../assets/img/project-img2.png';
 import projImg3 from '../assets/img/project-img3.png';
-import { Col, Container, Row,Nav, TabContainer,Tab } from 'react-bootstrap';
+import { Col, Container, Row,Nav, Tab } from 'react-bootstrap';
 import { ProjectCard } from './ProjectCard';
 import colorSharp2 from "../assets/img/color-sharp2.png"
 import 'animate.css';
@@ -15,16 +15,22 @@ function Projects(){
             title:"Portfolio WebSite",
             description:"React ",
             imgUrl:projImg1,
+            githubLink:"https://github.com/HassanBouighamdane/portfolio",
+            projectLink:"#"
         },
         {
             title:"Portfolio WebSite",
             description:"React ",
             imgUrl:projImg2,
+            githubLink:"https://github.com/HassanBouighamdane/portfolio",
+            projectLink:"#"
         },
         {
             title:"Portfolio WebSite",
             description:"React ",
             imgUrl:projImg3,
+            githubLink:"https://github.com/HassanBouighamdane/portfolio",
+            projectLink:"#"
         },
         
          
