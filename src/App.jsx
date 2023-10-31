@@ -18,9 +18,9 @@ function App() {
       <div className="App">
         <Routes>
           <Route index element={<Home/>}/>
-          <Route path='/Skills' element={<Skills/>}/>
-          <Route path='/Projects' element={<Projects/>}/>
-          <Route path='/Education' element={<Education/>}/>
+          <Route path='https://HassanBouighamdane.github.io/portfolio/Skills' element={<Skills/>}/>
+          <Route path='https://HassanBouighamdane.github.io/portfolio/Projects' element={<Projects/>}/>
+          <Route path='https://HassanBouighamdane.github.io/portfolio/Education' element={<Education/>}/>
           <Route path='*' element={<NoPage/>}/>
         </Routes>
       
