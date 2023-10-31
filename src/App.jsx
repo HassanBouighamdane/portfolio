@@ -16,7 +16,7 @@ function App() {
   return (
     <Router>
       <div className="App" >
-        <Routes basename='/portfolio'>
+        <Routes >
           <Route index element={<Home/>}/>
           <Route path='/Skills' element={<Skills/>}/>
           <Route path='/Projects' element={<Projects/>}/>
