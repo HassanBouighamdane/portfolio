@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.d090da6b.css",
-    "main.js": "/portfolio/static/js/main.1b7d8e3a.js",
+    "main.js": "/portfolio/static/js/main.a3425f62.js",
     "static/media/Restaurant.jpg": "/portfolio/static/media/Restaurant.38daeba6c8f0d1209dac.jpg",
     "static/media/portfolio.jpg": "/portfolio/static/media/portfolio.eabe80b29a913ce8a39b.jpg",
     "static/media/CV.pdf": "/portfolio/static/media/CV.dcb698b277b80a486ff0.pdf",
@@ -13,11 +13,9 @@
     "static/media/revicons.eot": "/portfolio/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/portfolio/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/meter60.png": "/portfolio/static/media/meter60.8b49b8d05d627d023fa8.png",
-    "static/media/meter50.png": "/portfolio/static/media/meter50.490c941d2603b1788b6c.png",
     "static/media/meter70.png": "/portfolio/static/media/meter70.abec2db791f0f679519f.png",
     "static/media/revicons.woff": "/portfolio/static/media/revicons.e8746a624ed098489406.woff",
     "static/media/meter2.svg": "/portfolio/static/media/meter2.a0050a378a929877ac8144049ee0a1bf.svg",
-    "static/media/meter1.svg": "/portfolio/static/media/meter1.c61a2fc3fdd79d551b751c6c0f890ab6.svg",
     "static/media/meter3.svg": "/portfolio/static/media/meter3.2eda919df32db1af75a222eb99d3a931.svg",
     "static/media/laptop.svg": "/portfolio/static/media/laptop.86a55de348ba4cccb382127be8e48ab6.svg",
     "static/media/nav-icon3.svg": "/portfolio/static/media/nav-icon3.97ed8e7eef60d61ca469881dd6f34511.svg",
@@ -25,10 +23,10 @@
     "index.html": "/portfolio/index.html",
     "static/media/nav-icon2.svg": "/portfolio/static/media/nav-icon2.a39f0e5e47e442dafcc5c9c320f19f6f.svg",
     "main.d090da6b.css.map": "/portfolio/static/css/main.d090da6b.css.map",
-    "main.1b7d8e3a.js.map": "/portfolio/static/js/main.1b7d8e3a.js.map"
+    "main.a3425f62.js.map": "/portfolio/static/js/main.a3425f62.js.map"
   },
   "entrypoints": [
     "static/css/main.d090da6b.css",
-    "static/js/main.1b7d8e3a.js"
+    "static/js/main.a3425f62.js"
   ]
 }
