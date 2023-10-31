@@ -3,7 +3,7 @@ import { ArrowDownCircle} from "react-bootstrap-icons";
 import myImg from '../assets/img/Personal-image.jpg';
 import { useEffect,useState } from "react";
 import cv from '../assets/CV.pdf'
-import '../styles/Banner.css'
+import '../styles/Home.css'
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
 import NavBar from '../Components/NavBar'
@@ -11,7 +11,7 @@ import Footer from '../Components/Footer'
 import Contact from '../Components/Contact'
 
 
-function Banner(){
+function Home(){
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
@@ -88,4 +88,4 @@ function Banner(){
         
 }
 
-export default Banner
+export default Home
