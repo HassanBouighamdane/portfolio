@@ -1,7 +1,7 @@
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import '../styles/Skills.css';
-import SkillsItems from './SkillsItems';
+import SkillsItems from '../Components/SkillsItems';
 import { Container, Row,Col} from 'react-bootstrap';
 import meter95 from '../assets/img/meter1.svg';
 import meter80 from '../assets/img/meter2.svg';
@@ -9,7 +9,10 @@ import meter90 from '../assets/img/meter3.svg';
 import meter70 from '../assets/img/meter70.png';
 import meter60 from '../assets/img/meter60.png';
 import meter50 from '../assets/img/meter50.png';
-import colorSharp from '../assets/img/color-sharp.png';
+import Contact from '../Components/Contact';
+import NavBar from '../Components/NavBar';
+import Footer from '../Components/Footer';
+
 
 function Skills(){
     const responsive = {
@@ -59,12 +62,13 @@ function Skills(){
         },
       ]
       return(
+        <>
+        <NavBar/>
         <section className='skill' id='skills'>
           <Container>
             <Row>
               <Col>
               <div className='skill-bx'>
-                <h2>Skills</h2>
                 <p>I bring a diverse set of skills to the table, ranging from web development and design to software engineering. With a keen eye for detail and a passion for problem-solving, I'm dedicated to creating effective and user-friendly solutions</p>
                 <Carousel responsive={responsive} infinite={true} className='skill-slider'>
                   
@@ -84,8 +88,11 @@ function Skills(){
               </Col>
             </Row>
           </Container>
-          <img className='background-image-left' src={colorSharp}/>
+          
         </section>
+        <Contact/>
+        <Footer/>
+        </>
       )
 
 } 

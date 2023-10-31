@@ -1,21 +1,24 @@
 import { Row,Col } from "react-bootstrap";
-import { ArrowRightCircle} from "react-bootstrap-icons";
+import { ArrowDownCircle} from "react-bootstrap-icons";
 import myImg from '../assets/img/Personal-image.jpg';
 import { useEffect,useState } from "react";
 import cv from '../assets/CV.pdf'
 import '../styles/Banner.css'
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import NavBar from '../Components/NavBar'
+import Footer from '../Components/Footer'
+import Contact from '../Components/Contact'
 
 
 function Banner(){
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
     const [text, setText] = useState('');
-    const [delta, setDelta] = useState(300 - Math.random() * 100);
+    const [delta, setDelta] = useState(100);
     const [index, setIndex] = useState(1);
-    const toRotate = [  "Software Engineer","Web Developer", "Web Designer" ];
-    const period = 2000;
+    const toRotate = [  "Software Engineering","Web Developement", "Web Design","Database Administration","Java Programming" ];
+    const period = 500;
   
     useEffect(() => {
       let ticker = setInterval(() => {
@@ -44,7 +47,7 @@ function Banner(){
         setIsDeleting(false);
         setLoopNum(loopNum + 1);
         setIndex(1);
-        setDelta(500);
+        setDelta(100);
       } else {
         setIndex(prevIndex => prevIndex + 1);
       }
@@ -52,6 +55,8 @@ function Banner(){
     
         return (
 
+          <>
+          <NavBar/>
             <section className="banner" id="home">
             <Row className="align-items-center">
             <Col xs={12} md={6} xl={5}>
@@ -63,19 +68,22 @@ function Banner(){
                   {({ isVisible }) =>
                   <div  className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                     <div className="centered-content">
-                        <span className="tagline">Welcome to my portfolio</span>
-                        <h1>{`I'm Hassan Bouighamdane a `}<span className="txt-rotate" dataperiod="1000" data-rotate='[ "Web Developer", "Web Designer", "Software Engineer" ]'><span className="wrap">{text}</span></span></h1>
-                        <p>I'm a Software Engineering Student at National Institute of Postes and Telecommunications (INPT-Rabat). I have a passion for web development, web design, and I enjoy solving problems using Java.</p>
-                          <a href={cv}><button>My Cv<ArrowRightCircle size={25} /></button></a>
+                        
+                        <h1>{`Hi, I'm Hassan Bouighamdane `}</h1>
+                        <p>A Software Engineering Student at National Institute of Postes and Telecommunications (INPT-Rabat). I have a passion for web development, web design, and I enjoy solving problems using Java.</p>
+                        <h2>{`I'm into `}<span className="txt-rotate" dataperiod="1000" ><span className="wrap">{text}</span></span>.</h2>
+                          <a href={cv}><button>My Resume<ArrowDownCircle size={25} /></button></a>
         </div>
                     </div>}
                     </TrackVisibility>
                 </Col>
                 
             </Row>
-
-
         </section>
+        <Contact/>
+        <Footer/>
+
+        </>
         )
         
 }

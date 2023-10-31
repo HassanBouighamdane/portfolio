@@ -4,10 +4,12 @@ import PlagiarismImg from '../assets/img/project img/plagiat.jpg';
 import stockAppImg from '../assets/img/project img/stockManagement.jpg';
 import restaurantImg from '../assets/img/project img/Restaurant.jpg';
 import { Col, Container, Row,Nav, Tab } from 'react-bootstrap';
-import { ProjectCard } from './ProjectCard';
-import colorSharp2 from "../assets/img/color-sharp2.png"
+import { ProjectCard } from '../Components/ProjectCard';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import NavBar from '../Components/NavBar'
+import Footer from '../Components/Footer'
+import Contact from '../Components/Contact'
 
 function Projects(){
 
@@ -47,6 +49,8 @@ function Projects(){
          
     ];
     return(
+      <>
+      <NavBar/>
         <section className='project' id='projects'>
             <Container>
                 <Row>
@@ -54,7 +58,6 @@ function Projects(){
                     <TrackVisibility>
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
-                    <h2>Projects</h2>
                     <p>This is the list of some projects I realise  </p>
                     <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
@@ -98,8 +101,11 @@ function Projects(){
 
                 </Row>
             </Container>
-            <img className="background-image-right" src={colorSharp2}></img>
+            
         </section>
+        <Contact/>
+        <Footer/>
+        </>
     )
 
 }

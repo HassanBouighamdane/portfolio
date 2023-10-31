@@ -14,8 +14,8 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #121212 !important;
-  color: #fff !important;
+  background-color: #ffffff !important;
+  color: #333 !important;
   font-family: 'Centra', sans-serif !important;
 }
 
@@ -65,3 +65,9 @@ p.danger {
     color: red;
 }
 
+@media (max-width: 768px) {
+  .app {
+    display: flex;
+    flex-direction: column;
+  }
+}
