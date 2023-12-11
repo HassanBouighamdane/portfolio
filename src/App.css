@@ -14,7 +14,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #ffffff !important;
+  background-color: var(--body_background) !important;
   color: #333 !important;
   font-family: 'Centra', sans-serif !important;
 }

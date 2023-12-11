@@ -5,6 +5,7 @@ import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import '../styles/NavBar.css'
+import DarkMode from "./DarkMode";
 
 
 
@@ -35,7 +36,7 @@ function NavBar ()  {
     
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="https://hassanbouighamdane.github.io/portfolio/">
+          <Navbar.Brand href="https://hbouighamdane.vercel.app">
             <img className="logo" src={logo} alt="Logo" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -52,12 +53,15 @@ function NavBar ()  {
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/hassan-bouighamdane-095b01254/" target="_blank" title="LinkedIn"><img src={navIcon1} alt="Linkedin" /></a>
                 <a href="https://www.facebook.com/hassan.bouighamdane/" target="_blank" title="Facebook"><img src={navIcon2} alt="Facebook" /></a>
+
                 <a href="https://github.com/HassanBouighamdane" target="_blank" title="GitHub"><img src={navIcon3} alt="Github" /></a>
               </div>
 
               <a href="#connect">
               <button  className="vvd"  ><span>Let's Connect</span></button>
               </a>
+              <DarkMode/>
+              
             </span>
           </Navbar.Collapse>
         </Container>

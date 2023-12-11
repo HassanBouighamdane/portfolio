@@ -23,7 +23,7 @@ export default function Education(){
             alt:"CPGE image",
             title:"CPGE Centre Guelmim Bab Sahra",
             time:"2020-2022",
-            description:"Field Physics and Engineering Sciences (PSI).<br></br>National Rang 95/911.",
+            description:"Field Physics and Engineering Sciences (PSI).National Rang 95/911.",
             position:2
             
         },
@@ -41,7 +41,7 @@ export default function Education(){
     return(
         <>
         <NavBar/>
-        <MDBContainer fluid className="py-5" style={{ backgroundColor: "#F0F2F5" }}>
+        <MDBContainer fluid className="py-5" >
       <div className="main-timeline-2">
         {cursus.map((cursus,index)=>{
             return(

@@ -24,7 +24,7 @@
     margin-bottom: 20px;
     display: block;
     text-align: center;
-    color: #333;
+    color: var(--body_color);
   }
   .banner h2{
     font-size: 30px;
@@ -34,10 +34,10 @@
     margin-bottom: 20px;
     display: block;
     text-align: center;
-    color: #333;
+    color: var(--body_color);
   }
   .banner p {
-    color: rgb(75, 79, 88);
+    color: var(--body_color);
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
@@ -89,6 +89,6 @@
   }
   .txt-rotate > .wrap {
     border-right: 0.08em solid #666;
-    color: rgb(100, 107, 118);
+    color: var(--link_color);
     font-size: 30px;
   }
