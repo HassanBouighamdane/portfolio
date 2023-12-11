@@ -10,7 +10,7 @@ import '../styles/NavBar.css'
 
 function NavBar ()  {
 
-  const [activeLink, setActiveLink] = useState('home');
+  const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -43,10 +43,10 @@ function NavBar ()  {
           </Navbar.Toggle>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link href="/portfolio" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-              <Nav.Link href="/portfolio/skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-              <Nav.Link href="/portfolio/projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
-              <Nav.Link href="/portfolio/education" className={activeLink === 'education' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('education')}>Education</Nav.Link>
+              <Nav.Link href="/" className={activeLink === "home" ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink("home")}>Home</Nav.Link>
+              <Nav.Link href="/skills" className={activeLink === "skills" ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink("skills")}>Skills</Nav.Link>
+              <Nav.Link href="/projects" className={activeLink === "projects" ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink("projects")}>Projects</Nav.Link>
+              <Nav.Link href="/education" className={activeLink === "education" ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink("education")}>Education</Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
@@ -58,9 +58,6 @@ function NavBar ()  {
               <a href="#connect">
               <button  className="vvd"  ><span>Let's Connect</span></button>
               </a>
-               
-              
-              
             </span>
           </Navbar.Collapse>
         </Container>

@@ -12,7 +12,7 @@ export const ProjectCard=({title,description,imgUrl,githubLink,projectLink})=>{
           <h4>{title}</h4>
           <div className="description">{description}</div>
 
-          <div className="social-icon">
+          <div className="social-icon-projectcard">
           <a href={githubLink} target="_blank" title="GitHub"><img src={navIcon3} alt="Github" /></a>
           <a href={projectLink} title="Link"><img src={Laptop} alt="Laptop" /></a>
           </div>

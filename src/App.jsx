@@ -16,10 +16,10 @@ function App() {
       <div className="App" >
         
         <Routes >
-          <Route path='/portfolio' element={<Home/>}/>
-          <Route path='portfolio/Skills' element={<Skills/>}/>
-          <Route path='portfolio/Projects' element={<Projects/>}/>
-          <Route path='portfolio/Education' element={<Education/>}/>
+          <Route path='/' element={<Home/>}/>
+          <Route path='/Skills' element={<Skills/>}/>
+          <Route path='/Projects' element={<Projects/>}/>
+          <Route path='/Education' element={<Education/>}/>
           <Route path='*' element={<NoPage/>}/>
         </Routes>
       </div>
