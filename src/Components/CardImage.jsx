@@ -7,7 +7,7 @@ import {
   } from "mdb-react-ui-kit";
   export default function CardImage({src,alt,title,time,description,position}){
     return(
-        <div className={position%2==0 ? "timeline-2 left-2" : "timeline-2 right-2"}>
+        <div className={position%2===0 ? "timeline-2 left-2" : "timeline-2 right-2"}>
         <MDBCard>
           <MDBCardImage 
             src={src}

@@ -6,10 +6,12 @@ import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 import '../styles/NavBar.css'
 import DarkMode from "./DarkMode";
+import { useDarkMode } from "./DarkModeContext";
 
 
 
 function NavBar ()  {
+  const { darkMode } = useDarkMode();
 
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
@@ -53,7 +55,6 @@ function NavBar ()  {
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/hassan-bouighamdane-095b01254/" target="_blank" title="LinkedIn"><img src={navIcon1} alt="Linkedin" /></a>
                 <a href="https://www.facebook.com/hassan.bouighamdane/" target="_blank" title="Facebook"><img src={navIcon2} alt="Facebook" /></a>
-
                 <a href="https://github.com/HassanBouighamdane" target="_blank" title="GitHub"><img src={navIcon3} alt="Github" /></a>
               </div>
 

@@ -149,6 +149,9 @@ function Skills(){
           <section className='skill' id='skills'>
             <Container>
               <Row>
+                <Col xs={12} md={6} xl={5} className='image-col'>
+                <img className='skill-gif' src='https://miro.medium.com/v2/resize:fit:1358/1*gReLR6hZjwyBxHmfLN1AVw.gif' alt='Developer'/>
+                </Col>
                 <Col>
                   <div className='skill-bx'>
                     <p>

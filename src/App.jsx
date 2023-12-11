@@ -6,14 +6,15 @@ import Projects from './Pages/Projects';
 import NoPage from './Pages/NoPage';
 import { BrowserRouter as Router,Route,Routes } from 'react-router-dom';
 import Education from './Pages/Education';
-import DarkMode from './Components/DarkMode';
+
+
 
 
 function App() {
 
   return (
-    
-    <Router>
+
+<Router>
       <div className="App" >
         <Routes >
           <Route path='/' element={<Home/>}/>
@@ -24,6 +25,7 @@ function App() {
         </Routes>
       </div>
     </Router>
+    
   );
 }
 
