@@ -5,6 +5,7 @@ import Contact from '../Components/Contact'
 import Footer from '../Components/Footer'
 import '../styles/Education.css'
 import CardImage from "../Components/CardImage";
+import lycee from "../assets/img/lycee.png"
 
 export default function Education(){
 
@@ -28,7 +29,7 @@ export default function Education(){
             
         },
         {
-            src:"https://scontent-mad2-1.xx.fbcdn.net/v/t39.30808-6/304808771_458349446309677_1302271115427643685_n.png?_nc_cat=111&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeHgW5IWJx9cCnUzS3ooK3yXVYQoRIhaEV1VhChEiFoRXdBUPHLLYAbOmXtbZg3XUNYl9snlNlr-8iJikRvnh1ti&_nc_ohc=WlYERPeuWS0AX-foExJ&_nc_ht=scontent-mad2-1.xx&oh=00_AfDhJQ8dCGeWUIIlmmW92OVN1txQUb7oSkBb8cMWo1XOzg&oe=657C4A16",
+            src: lycee,
             alt:"High School image",
             title:"Al Irfane High School Taghjijt-Guelmim",
             time:"2020",
